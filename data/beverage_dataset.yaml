@@ -1,0 +1,25 @@
+# Beverage Detection Dataset Configuration
+# Custom trained for 4 specific products
+
+# Path to dataset
+path: beverage_training_data
+
+# Train/Val/Test splits
+train: images/train
+val: images/val
+test: 
+
+# Classes - 4 specific beverage products
+nc: 4  # number of classes
+names: [
+    'Heineken Not A SAB Product',
+    'Corona SunBrew SAB Product', 
+    'Castke Lite SAB Product',
+    'Hansa Pilsner SAB Product'
+]
+
+# Class details for reference:
+# 0: Heineken Not A SAB Product (alcoholic)
+# 1: Corona SunBrew SAB Product (non-alcoholic)
+# 2: Castke Lite SAB Product (alcoholic)
+# 3: Hansa Pilsner SAB Product (alcoholic)

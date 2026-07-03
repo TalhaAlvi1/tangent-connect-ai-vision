@@ -1,0 +1,103 @@
+# Beverage Detection Training - Complete Guide
+
+## 🎯 What We've Done
+
+1. **Updated Configuration** - Set up your 4 specific beverage products:
+   - Heineken Not A SAB Product (Alcoholic)
+   - Corona SunBrew SAB Product (Non-Alcoholic)  
+   - Castke Lite SAB Product (Alcoholic)
+   - Hansa Pilsner SAB Product (Alcoholic)
+
+2. **Created Training Structure** - Organized your 48 images into:
+   - 80% training data (38 images)
+   - 20% validation data (10 images)
+   - Proper YOLO format folders
+
+3. **Launched Training** - The training wizard is now running with:
+   - 4-class detection model
+   - 50-100 epochs (as configured)
+   - Automatic train/val split
+
+## 📊 Current Status
+
+✅ **Training in Progress** - This will take 30-60 minutes depending on your system
+
+## 🔧 Next Steps (After Training Completes)
+
+### Step 1: Monitor Training Progress
+```
+Double-click: monitor_training.bat
+```
+Or run: `python monitor_training.py`
+
+This will:
+- Show training status
+- Display when training completes
+- Show model location and size
+- Offer to test automatically
+
+### Step 2: Test Your Trained Model
+```
+Double-click: test_model.bat
+```
+Or run: `python test_trained_model.py`
+
+This will:
+- Load your custom-trained model
+- Test on webcam, images, or validation data
+- Verify correct product detection
+- Show confidence scores
+
+### Step 3: Use in Main Application
+1. Run main application: `python main.py`
+2. Go to **Model** → **Load Custom Model**
+3. Navigate to: `runs/detect/[training_name]/weights/best.pt`
+4. Click **Open**
+
+## 📈 What to Expect
+
+### During Training:
+- Epoch progress: 1/50 → 2/50 → ... → 50/50
+- mAP (accuracy) should improve over time
+- Final model size: ~6-20 MB
+
+### After Training:
+- Your system will detect ONLY your 4 specific products
+- Display exact names: "Heineken Not A SAB Product", etc.
+- Show correct alcoholic/non-alcoholic classification
+- Count each product separately in the display
+
+## 🛠️ Troubleshooting
+
+### If Training Fails:
+- Check that ultralytics is installed: `pip install ultralytics`
+- Ensure all 48 images were copied correctly
+- Verify label files were created during labeling
+
+### If Detection Isn't Accurate:
+- Lower confidence threshold in settings.py (CONFIDENCE_THRESHOLD)
+- Add more training images (50-100 images per class recommended)
+- Retrain with more epochs (100-150)
+
+### If Model Doesn't Load:
+- Check that training completed successfully
+- Verify the model file exists at the expected path
+- Ensure you're selecting the "best.pt" file, not "last.pt"
+
+## 📁 Important File Locations
+
+- **Training Data**: `beverage_training_data/`
+- **Trained Models**: `runs/detect/`
+- **Configuration**: `config/settings.py`
+- **Dataset Config**: `data/beverage_dataset.yaml`
+
+## 🎉 Success Criteria
+
+When everything works correctly, you'll see:
+1. Training completes without errors
+2. Model file created in runs/detect/
+3. Test script shows correct product names
+4. Main application counts your specific 4 products
+5. Display shows exact names as configured
+
+Your system will now be production-ready for detecting and counting exactly these 4 beverage products!

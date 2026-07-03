@@ -1,0 +1,23 @@
+# Core Dependencies
+opencv-python==4.9.0.80
+numpy==1.26.4
+Pillow==10.2.0
+
+# AI/ML - YOLO Detection
+ultralytics==8.1.34
+torch==2.2.0
+torchvision==0.17.0
+
+# GUI - Modern Tkinter
+ttkbootstrap==1.10.1
+
+# Database
+pandas==2.2.0
+
+# Utilities
+pyyaml==6.0.1
+requests==2.31.0
+tqdm==4.66.1
+
+# For Windows executable
+pyinstaller==6.3.0

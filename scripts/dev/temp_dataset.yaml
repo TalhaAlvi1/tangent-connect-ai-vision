@@ -1,0 +1,9 @@
+
+# Simple beverage dataset
+path: .
+train: beverage_training_data/images/train
+val: beverage_training_data/images/val
+
+# Classes
+nc: 4
+names: ['Heineken Not A SAB Product', 'Corona SunBrew SAB Product', 'Castke Lite SAB Product', 'Hansa Pilsner SAB Product']
