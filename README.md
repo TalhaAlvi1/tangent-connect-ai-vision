@@ -26,6 +26,7 @@ A local, offline Windows desktop application that connects to a camera (webcam, 
 <img width="1112" height="633" alt="Screenshot 2026-02-09 160907" src="https://github.com/user-attachments/assets/08717fe3-5d7e-4574-9bd4-93ca7aaf699a" />
 
 </div>
+
 ## 🎬 Demo
  
 <div align="center">
@@ -34,6 +35,7 @@ https://github.com/user-attachments/assets/3863fd66-dfed-4c40-a84f-fdd61e5c0326
 
 </div>
 ---
+
 ## ✨ Features
 
 - 🎥 **Multi-source input** — Webcam, RTSP/IP camera, video file, or built‑in demo mode
