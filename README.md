@@ -19,7 +19,21 @@
 A local, offline Windows desktop application that connects to a camera (webcam, RTSP/IP camera, or video file), detects beverages in real time with a fine‑tuned **YOLOv8** model, classifies each item as **alcoholic / non‑alcoholic**, tracks and counts unique items, and lets you retrain the model on new products through a built‑in wizard — no coding required.
 
 ---
+## 📸 Screenshots
+ 
+<div align="center">
+<img width="1356" height="910" alt="Screenshot 2026-02-09 104301" src="https://github.com/user-attachments/assets/771148d5-aea8-46d1-aaf4-78d1783ee9a3" />
+<img width="1112" height="633" alt="Screenshot 2026-02-09 160907" src="https://github.com/user-attachments/assets/08717fe3-5d7e-4574-9bd4-93ca7aaf699a" />
 
+</div>
+## 🎬 Demo
+ 
+<div align="center">
+
+https://github.com/user-attachments/assets/3863fd66-dfed-4c40-a84f-fdd61e5c0326
+
+</div>
+---
 ## ✨ Features
 
 - 🎥 **Multi-source input** — Webcam, RTSP/IP camera, video file, or built‑in demo mode
